@@ -1,0 +1,12 @@
+Analysis & Synthesis Status : Successful - Sun Jun 02 00:20:24 2024
+Quartus II Version : 7.2 Build 175 11/20/2007 SP 1 SJ Full Version
+Revision Name : Loop_LED
+Top-level Entity Name : Loop_LED
+Family : Cyclone
+Total logic elements : 702
+Total pins : 12
+Total virtual pins : 7
+Total memory bits : 896
+DSP block 9-bit elements : N/A until Partition Merge
+Total PLLs : 0
+Total DLLs : N/A until Partition Merge

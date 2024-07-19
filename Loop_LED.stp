@@ -1,0 +1,95 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP1C3 (0x020810DD)" sof_file="Loop_LED.sof" top_level_entity="Loop_LED">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance compilation_mode="full" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2024/05/13 19:56:01  #0">
+      <clock name="CLK_In" polarity="posedge" tap_mode="probeonly"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="Ctrl[0]" tap_mode="classic" type="input pin"/>
+          <wire name="Ctrl[1]" tap_mode="classic" type="input pin"/>
+          <wire name="Ctrl[2]" tap_mode="classic" type="input pin"/>
+          <wire name="LED_Out[0]" tap_mode="classic" type="output pin"/>
+          <wire name="LED_Out[1]" tap_mode="classic" type="output pin"/>
+          <wire name="LED_Out[2]" tap_mode="classic" type="output pin"/>
+          <wire name="RST" tap_mode="classic" type="input pin"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="Ctrl[0]" tap_mode="classic" type="input pin"/>
+          <wire name="Ctrl[1]" tap_mode="classic" type="input pin"/>
+          <wire name="Ctrl[2]" tap_mode="classic" type="input pin"/>
+          <wire name="LED_Out[0]" tap_mode="classic" type="output pin"/>
+          <wire name="LED_Out[1]" tap_mode="classic" type="output pin"/>
+          <wire name="LED_Out[2]" tap_mode="classic" type="output pin"/>
+          <wire name="RST" tap_mode="classic" type="input pin"/>
+        </data_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="Ctrl" order="lsb_to_msb" radix="hex" state="expand" type="input pin">
+            <net is_signal_inverted="no" name="Ctrl[0]"/>
+            <net is_signal_inverted="no" name="Ctrl[1]"/>
+            <net is_signal_inverted="no" name="Ctrl[2]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="LED_Out" order="lsb_to_msb" radix="hex" state="expand" type="output pin">
+            <net is_signal_inverted="no" name="LED_Out[0]"/>
+            <net is_signal_inverted="no" name="LED_Out[1]"/>
+            <net is_signal_inverted="no" name="LED_Out[2]"/>
+          </bus>
+          <net is_signal_inverted="no" name="RST"/>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="Ctrl" order="lsb_to_msb" radix="hex" state="expand" type="input pin">
+            <net is_signal_inverted="no" name="Ctrl[0]"/>
+            <net is_signal_inverted="no" name="Ctrl[1]"/>
+            <net is_signal_inverted="no" name="Ctrl[2]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="LED_Out" order="lsb_to_msb" radix="hex" state="expand" type="output pin">
+            <net is_signal_inverted="no" name="LED_Out[0]"/>
+            <net is_signal_inverted="no" name="LED_Out[1]"/>
+            <net is_signal_inverted="no" name="LED_Out[2]"/>
+          </bus>
+          <net is_signal_inverted="no" name="RST"/>
+        </setup_view>
+      </presentation>
+      <trigger CRC="F1A5471F" global_temp="1" name="trigger: 2024/06/02 00:20:20  #0" position="pre" power_up_trigger_mode="false" segment_size="1" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node>
+              <op_node left="661" top="192" type="Advanced Trigger Level Result"/>
+            </op_node>
+          </level>
+        </events>
+        <log>
+          <data global_temp="1" name="log: 2024/06/02 00:20:44  #0" power_up_mode="false" sample_depth="128" trigger_position="-1">01000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011010001101000110100011</data>
+          <extradata>1111111111111111T111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="3"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="5"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="32"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="4092"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1232,535,398,124,0,50,73,0,1"/>
+  </global_info>
+</session>

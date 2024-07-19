@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at ForwardFlow.v(14): Always Construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at ReverseForwardFlow.v(14): Always Construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at Control.v(32): Always Construct contains both blocking and non-blocking assignments
